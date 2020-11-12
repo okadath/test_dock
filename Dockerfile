@@ -25,9 +25,10 @@
 # RUN pyenv global 3.8.1
 
 # NOT WORKS!!!
-# FROM ubuntu:20.04
-# RUN apt-get update \
-#   && apt-get install -y python3-pip python3-dev libcairo2-dev libsdl-pango-dev 
+FROM ubuntu:20.04
+RUN apt-get update \
+  && apt-get install -y python3-pip python3-dev 
+  #libcairo2-dev libsdl-pango-dev 
 # pull official base image
 FROM python:3.8.3-alpine
 
