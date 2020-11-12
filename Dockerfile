@@ -32,11 +32,7 @@ RUN apt-get update \
 FROM python:3.8.3-alpine
 
 # set work directory
-<<<<<<< HEAD
-WORKDIR /root/test_docker
-=======
 WORKDIR /usr/src/app/
->>>>>>> 4a3e99c338df204e4cedb121a0bcd015385373bf
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
