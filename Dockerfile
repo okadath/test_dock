@@ -26,9 +26,9 @@
 
 # NOT WORKS!!!
 FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
-  && apt-get install  gcc python3-pip python3-dev 
-  #libcairo2-dev libsdl-pango-dev 
+  && apt-get install python3-pip python3-dev libcairo2-dev libsdl-pango-dev 
 # pull official base image
 FROM python:3.8.3-alpine
 
