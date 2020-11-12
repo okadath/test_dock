@@ -5,7 +5,11 @@ services:
     build: ./app
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
+<<<<<<< HEAD
       - ./app/:/root/test_docker
+=======
+      - ./app/:/usr/src/app/
+>>>>>>> 4a3e99c338df204e4cedb121a0bcd015385373bf
     ports:
       - 8000:8000
     env_file:
