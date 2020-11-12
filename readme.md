@@ -402,11 +402,18 @@ docker inspect -f {{}} nombre_contenedor = filtra una variable especifico del co
 docker rm nombre_contenedor = elimina un contenedor
 docker rm $(ps -aq) = borra TODOS los contenedores
 
-
+```sh
 docker-compose build
+```
 ya que este  buildeado hay que levantarlo y ieando a la direccion indicada veremos si se levanto o no
 
 docker-compose up -d
 docker-compose down -v
+```sh
+# creo que basta cn este y darle up para que funcione
 docker-compose -f docker-compose.prod.yml up -d --build
-
+```
+para entrar al contenedor:
+```
+docker exec -it test_dock_web_1 "/bin/bash"
+```
