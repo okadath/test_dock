@@ -389,6 +389,9 @@ sudo apt-get install apt-transport-https  ca-certificates curl  gnupg-agent soft
 sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs) stable"
 ```
 
+para pushear sin meter siempre la pass
+
+git push https://username:password@myrepository.biz/file.git --all
 
 docker ps = lista los contenedores
 docker ps -a = lista contenedores a detalles
@@ -398,3 +401,9 @@ docker inspect nombre_contenedor = lo mismo que el anterior
 docker inspect -f {{}} nombre_contenedor = filtra una variable especifico del contenedor
 docker rm nombre_contenedor = elimina un contenedor
 docker rm $(ps -aq) = borra TODOS los contenedores
+
+
+docker-compose build
+ya que este  buildeado hay que levantarlo y ieando a la direccion indicada veremos si se levanto o no
+
+docker-compose up -d
