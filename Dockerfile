@@ -26,9 +26,7 @@
 
 # NOT WORKS!!!
 FROM ubuntu:20.04
-RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y tzdata
-RUN apt-get update \
-  && apt-get install libcairo2-dev libsdl-pango-dev 
+RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y tzdata libcairo2-dev libsdl-pango-dev 
 # pull official base image
 FROM python:3.8.3-alpine
 
