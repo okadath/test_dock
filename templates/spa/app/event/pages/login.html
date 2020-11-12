@@ -1,0 +1,106 @@
+{% extends './base/base.html' %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+{% block title %} Iniciar Sesión {% endblock %}
+{% block description %} Bienvenidos a La Cumbre Global del Liderazgo {% endblock %}
+{% block content %}
+    <!--
+    BEGINS CONTENT
+    -->
+    <div class="page-header register-page header-filter" filter-color="black" style=" padding-bottom: 50px;">
+      <div class="container">
+      <br>
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto m-4">
+            <form class="form" method="POST" action= "{% url 'login_mail' %}">
+              {% csrf_token %}
+              <div class="card card-login card-hidden">
+                <div class="card-header card-header-danger text-center">
+                    <img class="img-fluid p-2" src="https://www.redviva.com/lacumbreglobal/wp-content/uploads/sites/2/2019/10/logo.png">
+                    <br>
+                    <br>
+                    <h3 class="card-title">Bienvenidos</h3>
+                    <p>
+                        Para ingresar a la plataforma necesitaras tu <b>Número de Pedido (# Order)</b> y el <b>Email</b>
+                        que fue utilizado para la compra del boleto en Evenbrite
+                        <a hidden href="" data-toggle="modal" data-target="#exampleModal"><span style="background-color: #2696C2; padding:0 6px; border-radius: 30%; color: white;">&#63;</span></a>
+                    </p>
+                </div>
+                  {% if error_messages %}
+                      <br>
+                        <div class="alert alert-danger">
+                            <strong>{{ error_messages }}</strong>
+                        </div>  
+                        {% endif %}
+                <div class="card-body ">
+                  <span class="bmd-form-group">
+                  </span>
+                  <span class="bmd-form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">filter_9_plus</i>
+                        </span>
+                      </div>
+                      <!-- <input type="email" class="form-control" placeholder="Email"> -->
+                      <input  name="username" id="id_username" class="form-control" placeholder="Número de Pedido" required>
+                    </div>
+                  </span>
+                    <br>
+                  <span class="bmd-form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">mail</i>
+                        </span>
+                      </div>
+                      <input type="text" name="password" required id="id_password" placeholder="Email" class="form-control" required>
+                    </div>
+                  </span>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <!-- ponerle type="submit" es importante! -->
+                       <!--  <a href="#pablo" class="btn btn-danger mt-4">INGRESAR</a> -->
+                    <center>
+                        <button  class="btn btn-success mt-1" type="submit"> Ingresar </button>
+                    </center>
+                </div>
+              <div class="card-footer justify-content-center">
+                  <!-- ponerle type="submit" es importante! -->
+                       <!--  <a href="#pablo" class="btn btn-danger mt-4">INGRESAR</a> -->
+                    <center>
+                        <small>Al ingresar y hacer uso de la plataforma
+                            <br>
+                            Acepto la <a class="font-weight-bold text-primary" target="_blank" href="https://pibsatelite.mx/aviso-de-privacidad"><u>Politica de Privacidad</u></a> de la misma</small>
+                    </center>
+                </div>
+              </div>
+            </form>
+          </div>
+            </div>
+          </div>
+        </div>
+        <!--modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ejemplo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="{% static 'assets/img/ejemplo-pedido-2.jpeg' %}">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    <!--
+    ENDS CONTENT
+    -->
+{% endblock %}

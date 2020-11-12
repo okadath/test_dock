@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!--
+BEGINS SHORTCUTS ICONS
+-->
+<li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-ungroup text-white"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-light-gray dropdown-menu-right">
+                <div class="row shortcuts px-4">
+                    <a hidden href="{% url 'see_event' "gls-online" %}" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-default">
+                      <i class="fa fa-home text-white"></i>
+                    </span>
+                    <small class="text-muted">Lobby</small>
+                  </a>
+                  <a href="{% url 'room' "gls-online" "1-Programming" %}" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-default">
+                      <i class="fa fa-th-large text-white"></i>
+                    </span>
+                    <small class="text-muted">Sesión Principal</small>
+                  </a>
+                  <a hidden href="{% url 'room' "gls-online" "2-Sessions" %}" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-default">
+                      <i class="fa fa-th-large text-white"></i>
+                    </span>
+                    <small class="text-muted">Sala de receso 1</small>
+                  </a>
+                  <a hidden href="{% url 'room' "gls-online" "3-GranderVision" %}" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-default">
+                      <i class="fa fa-th-large text-white"></i>
+                    </span>
+                    <small class="text-muted">Sala de Receso 2</small>
+                  </a>
+                    <a hidden href="{% url 'room' "gls-online" "3-GranderVision" %}" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                      <i class="fa fa-th-large text-white"></i>
+                    </span>
+                    <small class="text-muted">CGL 2021</small>
+                  </a>
+                  <a href="{% url 'teamedition' event.slug  %}" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                      <i class="fa fa-users text-white"></i>
+                    </span>
+                    <small class="text-muted">Team Edition</small>
+                  </a>
+                </div>
+              </div>
+</li>
+<!--
+ENDS SHORTCUTS ICONS
+-->

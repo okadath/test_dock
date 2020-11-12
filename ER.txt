@@ -1,0 +1,109 @@
+MODELOS
+
+Events APP
+
+	Client
+		- name(char)
+		- slug(slug)
+		- logo(image)
+		
+	Event
+		- name(char)
+		- slug(slug)
+		- client(FK: Client)
+		- start_date(DateTime)
+		- end_date(DateTime)
+		- language(char)
+		- country(CountryField:DjangoCountries)
+		- description(text)
+		- event_logo(image)
+		- event_banner_1(image)
+		- event_banner_2(image)
+		- have_live_player(boolean)
+		- have_chat(boolean)
+		- brand_color_1(ColorField)(pending)
+		- brand_color_2(ColorField)(pending)
+		- brand_color_3(ColorField)(pending)
+		
+	Landing
+		- Event (FK: Event)
+		- Pending(ioloagonosabotodabia)
+		
+	LivePlayer
+		- Event(FK: Event)
+		- type(CHOICES: 1-Live, 2-SimulatedLive, 3-VideoPlaceholder)
+		- live_video(text)
+		- simmulated_live(text)
+		- start_date(DateTime)
+		- end_date(DateTime)
+		- thumbnail(image)
+		- pre_live_video(text)
+		
+	Chat
+		- Event(FK: Event)
+		- embed_code(text)
+		
+	Schedule
+		- Event(FK: Event)
+		- is_active(boolean)
+	
+	Announcement
+		- Event(FK: Event)
+		- name(char)
+		- horizonral_banner(image)
+		- horizontal_banner_title(char)
+		- horizontal_banner_link(url)
+		- vertical_banner(image)
+		- vertical_banner_title(char)
+		- vertical_banner_link(url)
+		- link_1(url)
+		- link_title_1(char)
+		- link_2(url)
+		- link_title_2(char)
+		- description(text)
+		
+	Resource
+		- Event(FK: Event)
+		- title(char)
+		- link(url)
+		- thumbnail(image)
+		- description (text)
+		
+	Room
+		- Event(FK: Event)
+		- name(char)
+		- thumbnail(image)
+		- banner(image)
+		- icon(char)
+		- description(text)
+		
+	Video
+		- Event(FK: Event)
+		- title(char)
+		- speaker(FK: Speaker)
+		- schedule(FK: Schedule)
+		- room(FK: Room)
+		- start_date(DateTime)
+		- end_date(DateTime)
+		- video(text)
+		- resource(FK: Resource)
+		- thumbnail(image)
+		- description(text)
+		
+	Speaker
+		- Event(FK: Event)
+		- name(char)
+		- bio(text)
+		- thumbnail(image)
+		
+	UserNotes
+		- Event(FK: Event)
+		- Pending(ioloagonosabotodabia)
+	
+User_Accounts APP
+	- Your Dark Magic
+
+Licenses APP
+	- Your Dark Magic
+
+Para esta version, un evento tiene una licencia y una licencia tiene sus codigos. No hay restriccion por region o pais.

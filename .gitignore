@@ -1,0 +1,5 @@
+Pipfile.lock
+*.pyc
+env
+.DS_store
+*.csv

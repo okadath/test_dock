@@ -1,0 +1,78 @@
+{% load staticfiles %}
+<!-- BEGINS CONTENT NAVBAR -->
+        <ul class="navbar-nav" style="margin-top: -10px">
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'see_event' event.slug  %}">
+              <i class="fa fa-home text-muted"></i>
+              <span class="nav-link-text"> Lobby </span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'programa'  event.slug  %}">
+              <i class="ni ni-single-copy-04 text-muted"></i>
+              <span class="nav-link-text"> Programa </span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'rooms'  event.slug  %}">
+              <i class="fa fa-th-large text-muted"></i>
+              <span class="nav-link-text"> Salas </span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'speakers'  event.slug  %}">
+              <i class="fa fa-user text-muted"></i>
+              <span class="nav-link-text"> Speakers </span>
+            </a>
+          </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="{% url 'recursos'  event.slug  %}">
+              <i class="fa fa-folder text-muted"></i>
+              <span class="nav-link-text"> Recursos </span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'notes'  event.slug  %}">
+              <i class="fa fa-file text-muted"></i>
+                <span class="nav-link-text"> Notas </span>
+            </a>
+          </li>
+          <!-- recien agregado -->
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'sponsors' event.slug %}">
+                <i class="ni ni-building text-muted"></i>
+                <span class="nav-link-text">Patrocinadores</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'supportspiritual' event.slug  %}">
+              <i class="material-icons text-muted">pan_tool</i>
+                <span class="nav-link-text">Peticiones de Oración</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'teamedition' event.slug  %}">
+              <i class="fa fa-users text-muted"></i>
+                <span class="nav-link-text">Team Edition</span>
+            </a>
+          </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="{% url 'support' event.slug %}">
+              <i class="fa fa-life-ring text-muted"></i>
+                <span class="nav-link-text">Soporte </span>
+            </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal">
+                <i class="fa fa-money-bill text-muted"></i>
+                <span class="nav-link-text">Donativos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.eventbrite.com.mx/e/cumbre-global-de-liderazgo-2021-tickets-127374174585" TARGET="_blank">
+                <i class="fa fa-globe text-muted"></i>
+                <span class="nav-link-text font-weight-bold">CGL 2021</span>
+              </a>
+            </li>
+        </ul>
+<!-- BEGINS CONTENT NAVBAR -->

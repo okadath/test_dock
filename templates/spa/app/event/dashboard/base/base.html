@@ -1,0 +1,163 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="La Cumbre Global del Liderazgo">
+        <!-- BEGINS description -->
+        <meta name="description" content="{% block description %}  {% endblock %}">
+        <!-- ENDS description -->
+        <!-- BEGINS Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="https://globalleadership.org/wp-content/themes/JointsWP-CSS-master/assets/images/logo_summit_mountain_white.png" />
+        <link rel="icon" href="https://globalleadership.org/wp-content/themes/JointsWP-CSS-master/assets/images/logo_summit_mountain_white.png" type="image/png">
+        <!-- ENDS Favicon -->
+        <!-- BEGINS title -->
+        <title>{% block title %} {% endblock %}</title>
+        <!-- ENDS title -->
+        <!-- BEGINS STYLES -->
+        <!-- Argon CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/argon.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'assets/css/custom-styles.css' %}" type="text/css">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+        <!-- Icons -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+        <link rel="stylesheet" href="{% static 'assets/vendor/nucleo/css/nucleo.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'assets/vendor/fontawesome/fontawesome-free/css/all.min.css' %}" type="text/css">
+        <!-- ENDS STYLES -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZDNX17EJZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RZDNX17EJZ');
+        </script>
+    </head>
+    <!-- BEGINS BODY -->
+    <body>
+        <style>
+            .itemsContainer{float:left;position:relative}.itemsContainer:hover .play{display:block}.play{position:absolute;display:none;top:20%;width:40px;margin:0 auto;left:0;right:0;z-index:100}
+        </style>
+        <!-- Chromecast SDK -->
+            <script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+            <!-- THEOplayer library and css -->
+            <script type="text/javascript" src="https://cdn.myth.theoplayer.com/591eb373-a225-467e-9960-bbb2f5db6342/THEOplayer.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdn.myth.theoplayer.com/591eb373-a225-467e-9960-bbb2f5db6342/ui.css" />
+            <!-- Customization Theoplayer css styles -->
+            <style>
+                .theo-primary-color,
+                .vjs-selected {
+                    color: #ffffff !important;
+                }
+                .theo-primary-background {
+                    color: #000000 !important;
+                    background-color: #4a90e2 !important;
+                }
+                .theo-secondary-color {
+                    color: #ffffff !important;
+                }
+                .theo-secondary-background {
+                    color: #000000 !important;
+                    background-color: #ffffff !important;
+                }
+                .theo-tertiary-color {
+                    color: #000000 !important;
+                }
+                .theo-tertiary-background {
+                    color: #ffffff !important;
+                    background-color: #000000 !important;
+                }
+                .vjs-play-control {
+                    display: none !important;
+                }
+            </style>
+        <!-- BEGINS SIDEBAR -->
+        {% include './sidebar.html' %}
+        <!-- ENDS SIDEBAR -->
+        <!-- BEGINS Main content -->
+        <div class="main-content" id="panel" style="background-image: url('{% static 'assets/img/GLS20gradient_1-Material-Base-Color-FULL.jpg'  %}') !important;  padding-right:-0px; margin-right:-0px;">
+            <!-- BEGINS navbar -->
+            {% include './navbar.html' %}
+            <!-- ENDS navbar -->
+            <!-- BEGINS dashboard header -->
+            {% include './dashboard-header.html' %}
+            <!-- ENDS dashboard header -->
+            <!-- BEGINS CONTENT-->
+            <div class="container-fluid mt--6" style="padding-left:0px; margin-left:0px; padding-right:0px; margin-right:0px;">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <!-- ENDS CONTENT-->
+            <!-- BEGIN footer-->
+            {% include './footer.html' %}
+            <!-- END footer-->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DONATIVO U OFRENDA CGL</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-justify py-1">
+                          Éste donativo se utilizará al 100% para apoyar a otra Cumbre dentro de México u en otro país.
+                          Éste donativo es completamente independiente a la ofrenda que se da en la Iglesia.
+                          <br>
+                          Puedes hacer tu donativo a través de PAYPAL
+                          <br>
+                          <br>
+                        <center>
+                           <a class="btn btn-default" href="https://www.paypal.com/donate?hosted_button_id=YRNJERTFXEFRS" target="_blank">Ir a Paypal</a>
+                        </center>
+                          <br>
+                          Puedes hacer depósito o transferencia a la siguiente cuenta bancaria:
+                          <br>
+                          <br>
+                          <b>BANAMEX</b>
+                            <br>
+                          <b>Beneficiario:</b><br> Primera Iglesia Bautista de Ciudad Satélite, A.R.
+                            <br>
+                          <b>Cuenta:</b> 7874003
+                            <br>
+                          <b>SUC.</b> 573
+                            <br>
+                          <b>CLABE INTERBANCARIA:</b> 002 180 05737874003 1
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+        </div>
+        <!-- ENDS Main content -->
+        <!-- BEGIN lang-->
+{#        {% include './languages.html' %}#}
+        <!-- END lang-->
+        <!-- BEGINS JS -->
+          <!-- Argon Scripts -->
+          <!-- Core -->
+          <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+          <script src="{% static 'assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+          <script src="{% static 'assets/vendor/js-cookie/js.cookie.js' %}"></script>
+          <script src="{% static 'assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js' %}"></script>
+          <script src="{% static 'assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js' %}"></script>
+          <!-- Optional JS -->
+          <script src="{% static 'assets/vendor/chart.js/dist/Chart.min.js' %}"></script>
+          <script src="{% static 'assets/vendor/chart.js/dist/Chart.extension.js' %}"></script>
+          <script src="{% static 'assets/vendor/jvectormap-next/jquery-jvectormap.min.js' %}"></script>
+          <script src="{% static 'assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js' %}"></script>
+          <!-- Argon JS -->
+          <script src="{% static 'assets/js/argon.js' %}"></script>
+          <!-- Demo JS - remove this in your project -->
+        <!-- ENDS JS -->
+    </body>
+    <!-- ENDS BODY -->
+</html>

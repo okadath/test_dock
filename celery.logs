@@ -1,0 +1,11 @@
+/root/.pyenv/versions/3.5.4/envs/venv/lib/python3.5/site-packages/celery/platforms.py:801: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+[2020-10-28 17:21:28,159: WARNING/MainProcess] /root/.pyenv/versions/3.5.4/envs/venv/lib/python3.5/site-packages/celery/fixups/django.py:206: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')

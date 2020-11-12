@@ -1,0 +1,331 @@
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    OnlineEXP/static/assets/css/material-dashboard.css
+	deleted:    OnlineEXP/static/assets/css/material-dashboard.css.map
+	deleted:    OnlineEXP/static/assets/css/material-dashboard.min.css
+	deleted:    OnlineEXP/static/assets/demo/demo.css
+	deleted:    OnlineEXP/static/assets/demo/demo.js
+	deleted:    OnlineEXP/static/assets/img/EsteticaCAoLatam.png
+	deleted:    OnlineEXP/static/assets/img/EsteticaCAoLatamsinlogos.png
+	deleted:    OnlineEXP/static/assets/img/apple-icon.png
+	deleted:    OnlineEXP/static/assets/img/bg-pricing.jpg
+	deleted:    OnlineEXP/static/assets/img/bg3.jpg
+	deleted:    OnlineEXP/static/assets/img/bg9.jpg
+	deleted:    OnlineEXP/static/assets/img/card-1.jpeg
+	deleted:    OnlineEXP/static/assets/img/card-1.jpg
+	deleted:    OnlineEXP/static/assets/img/card-2.jpeg
+	deleted:    OnlineEXP/static/assets/img/card-2.jpg
+	deleted:    OnlineEXP/static/assets/img/card-3.jpeg
+	deleted:    OnlineEXP/static/assets/img/card-3.jpg
+	deleted:    OnlineEXP/static/assets/img/clint-mckoy.jpg
+	deleted:    OnlineEXP/static/assets/img/default-avatar.png
+	deleted:    OnlineEXP/static/assets/img/faces/avatar.jpg
+	deleted:    OnlineEXP/static/assets/img/faces/card-profile1-square.jpg
+	deleted:    OnlineEXP/static/assets/img/faces/card-profile2-square.jpg
+	deleted:    OnlineEXP/static/assets/img/faces/marc.jpg
+	deleted:    OnlineEXP/static/assets/img/favicon.png
+	deleted:    OnlineEXP/static/assets/img/flags/AU.png
+	deleted:    OnlineEXP/static/assets/img/flags/BR.png
+	deleted:    OnlineEXP/static/assets/img/flags/DE.png
+	deleted:    OnlineEXP/static/assets/img/flags/GB.png
+	deleted:    OnlineEXP/static/assets/img/flags/RO.png
+	deleted:    OnlineEXP/static/assets/img/flags/US.png
+	deleted:    OnlineEXP/static/assets/img/fondo-alpha-copy.png
+	deleted:    OnlineEXP/static/assets/img/fondo-alpha.png
+	deleted:    OnlineEXP/static/assets/img/header-doc.jpg
+	deleted:    OnlineEXP/static/assets/img/image_placeholder.jpg
+	deleted:    OnlineEXP/static/assets/img/lock.jpg
+	deleted:    OnlineEXP/static/assets/img/login.jpg
+	deleted:    OnlineEXP/static/assets/img/mask.png
+	deleted:    OnlineEXP/static/assets/img/new_logo.png
+	deleted:    OnlineEXP/static/assets/img/placeholder.jpg
+	deleted:    OnlineEXP/static/assets/img/product1.jpg
+	deleted:    OnlineEXP/static/assets/img/product2.jpg
+	deleted:    OnlineEXP/static/assets/img/product3.jpg
+	deleted:    OnlineEXP/static/assets/img/register.jpg
+	deleted:    OnlineEXP/static/assets/img/sidebar-1.jpg
+	deleted:    OnlineEXP/static/assets/img/sidebar-2.jpg
+	deleted:    OnlineEXP/static/assets/img/sidebar-3.jpg
+	deleted:    OnlineEXP/static/assets/img/sidebar-4.jpg
+	deleted:    OnlineEXP/static/assets/js/core/bootstrap-material-design.min.js
+	deleted:    OnlineEXP/static/assets/js/core/jquery.min.js
+	deleted:    OnlineEXP/static/assets/js/core/popper.min.js
+	deleted:    OnlineEXP/static/assets/js/material-dashboard.js
+	deleted:    OnlineEXP/static/assets/js/material-dashboard.js.map
+	deleted:    OnlineEXP/static/assets/js/material-dashboard.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/arrive.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/bootstrap-datetimepicker.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/bootstrap-notify.js
+	deleted:    OnlineEXP/static/assets/js/plugins/bootstrap-selectpicker.js
+	deleted:    OnlineEXP/static/assets/js/plugins/bootstrap-tagsinput.js
+	deleted:    OnlineEXP/static/assets/js/plugins/chartist.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/fullcalendar.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/jasny-bootstrap.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/jquery-jvectormap.js
+	deleted:    OnlineEXP/static/assets/js/plugins/jquery.bootstrap-wizard.js
+	deleted:    OnlineEXP/static/assets/js/plugins/jquery.dataTables.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/jquery.tagsinput.js
+	deleted:    OnlineEXP/static/assets/js/plugins/jquery.validate.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/moment.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/nouislider.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/perfect-scrollbar.jquery.min.js
+	deleted:    OnlineEXP/static/assets/js/plugins/sweetalert2.js
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_alerts.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_badges.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_cards.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_checkboxes.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_core-bootstrap.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_dropdown.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_example-pages.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_fixed-plugin.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_footers-extend.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_footers.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_forms-extend.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_headers.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_images.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_info-areas.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_input-group.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_misc-extend.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_misc.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_mixins.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_modal.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_navbar.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_pages.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_pagination.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_pills.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_popover.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_popups.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_progress.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_radios.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_responsive.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_ripples.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_rtl.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_sidebar-and-main-panel.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_social-buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_tables.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_tabs.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_timeline.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_togglebutton.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_tooltip.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_type.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/_variables.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_alert.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_badge.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_breadcrumb.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_button-group.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_card.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_carousel.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_close.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_code.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_custom-forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_dropdown.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_functions.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_grid.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_images.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_input-group.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_jumbotron.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_list-group.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_media.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_mixins.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_modal.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_nav.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_navbar.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_pagination.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_popover.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_print.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_progress.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_reboot.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_root.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_tables.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_tooltip.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_transitions.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_type.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_utilities.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/_variables.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/bootstrap-grid.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/bootstrap-reboot.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/bootstrap.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_alert.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_background-variant.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_badge.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_border-radius.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_box-shadow.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_breakpoints.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_caret.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_clearfix.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_float.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_gradients.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_grid-framework.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_grid.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_hover.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_image.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_list-group.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_lists.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_nav-divider.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_navbar-align.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_pagination.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_reset-text.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_resize.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_screen-reader.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_size.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_table-row.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_text-emphasis.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_text-hide.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_text-truncate.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_transition.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/mixins/_visibility.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_align.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_background.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_borders.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_clearfix.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_display.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_embed.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_flex.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_float.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_position.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_screenreaders.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_sizing.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_spacing.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_text.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/bootstrap/scss/utilities/_visibility.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-background.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-blog.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-collapse.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-contact.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-form-horizontal.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-plain-extend.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-plain.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-pricing.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-product.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-profile.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-rotate.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-signup.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-stats.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/cards/_card-testimonials.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_alert.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_animations.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_breakpoints.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_chartist.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_colored-shadows.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_drawer.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_hover.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_layout.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_navbar-colors.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_navs.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_sidebar-color.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_social-buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_transparency.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_type.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_utilities.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_variables.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/mixins/_vendor-prefixes.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_animate.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_chartist.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_datatables.net.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_fullcalendar.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_jquery.jvectormap.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_perfect-scrollbar.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_plugin-bootstrap-select.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_plugin-datetime-picker.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_plugin-fileupload.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_plugin-flexisel.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_plugin-nouislider.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_plugin-tagsinput.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_sweetalert2.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/plugins/_wizard-card.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_body.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_bootstrap-material-design-base.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_bootstrap-material-design.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_brand.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_buttons.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_card.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_code.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_colors-map.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_colors.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_custom-forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_drawer.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_dropdown.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_forms.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_layout.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_list-group.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_menu.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_modals.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_nav.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_pagination.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_shadow.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_snackbar.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_spacing.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_state.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_tables.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_tooltip.scss
+	deleted:    OnlineEXP/static/assets/scss/material-dashboard/variables/_type.scss
+	modified:   db_prod.sqlite3
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	OnlineEXP/static/assets/css/argon.css
+	OnlineEXP/static/assets/css/argon.min.css
+	OnlineEXP/static/assets/css/bootstrap/
+	OnlineEXP/static/assets/css/custom-styles.css
+	OnlineEXP/static/assets/css/video-js.css
+	OnlineEXP/static/assets/fonts/
+	OnlineEXP/static/assets/icons/
+	OnlineEXP/static/assets/img/1x/
+	OnlineEXP/static/assets/img/GLS20-backgroundDrop.png
+	OnlineEXP/static/assets/img/GLS20-gradient.png
+	OnlineEXP/static/assets/img/GLS20gradient_1-Material-Base-Color-FULL.jpg
+	OnlineEXP/static/assets/img/GLS20gradient_1-Material-Base-Color.jpg
+	OnlineEXP/static/assets/img/TE_thumbnails_2019/
+	OnlineEXP/static/assets/img/TGLSLogo01Black.png
+	OnlineEXP/static/assets/img/TGLSLogo01White.png
+	OnlineEXP/static/assets/img/V5_.jpg
+	OnlineEXP/static/assets/img/V6.jpg
+	OnlineEXP/static/assets/img/V7.jpg
+	OnlineEXP/static/assets/img/V8.jpg
+	OnlineEXP/static/assets/img/V9.jpg
+	OnlineEXP/static/assets/img/brand/
+	OnlineEXP/static/assets/img/glnweb.png
+	OnlineEXP/static/assets/img/glnwebsite.png
+	OnlineEXP/static/assets/img/glsnextapp.png
+	OnlineEXP/static/assets/img/gradient-short.png
+	OnlineEXP/static/assets/img/icons/
+	OnlineEXP/static/assets/img/lacumbreapp.png
+	OnlineEXP/static/assets/img/logo.png
+	OnlineEXP/static/assets/img/theme/
+	OnlineEXP/static/assets/img/video02_thumbnail.png
+	OnlineEXP/static/assets/js/argon.js
+	OnlineEXP/static/assets/js/argon.min.js
+	OnlineEXP/static/assets/js/components/
+	OnlineEXP/static/assets/js/demo.js
+	OnlineEXP/static/assets/js/demo.min.js
+	OnlineEXP/static/assets/js/jw-lib.js
+	OnlineEXP/static/assets/js/vendor/
+	OnlineEXP/static/assets/js/video.js
+	OnlineEXP/static/assets/js/videojs-contrib-hls.js
+	OnlineEXP/static/assets/js/videojs-contrib-quality-levels.cjs.min.js
+	OnlineEXP/static/assets/js/videojs-flash.js
+	OnlineEXP/static/assets/js/videojs-hls-quality-selector.cjs.min.js
+	OnlineEXP/static/assets/js/videojs-http-streaming.js
+	OnlineEXP/static/assets/scss/argon.scss
+	OnlineEXP/static/assets/scss/bootstrap/
+	OnlineEXP/static/assets/scss/core/
+	OnlineEXP/static/assets/scss/custom/
+	OnlineEXP/static/assets/vendor/
+	git_changes_server.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
