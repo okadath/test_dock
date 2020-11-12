@@ -380,6 +380,8 @@ lo ire definiendo mientras desarrollo el container
 
 instalacion
 https://docs.docker.com/engine/install/ubuntu/
+instalar docker compose
+https://docs.docker.com/compose/install/#install-compose
 
 usar:
 ```
