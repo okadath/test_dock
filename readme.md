@@ -360,3 +360,39 @@ usar:
 sudo apt-get install apt-transport-https  ca-certificates curl  gnupg-agent software-properties-common
 sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs) stable"
 ```
+
+
+## Docker
+
+ante el posible uso multiple de este proyecto iniciare a dockerizar el server de produccion
+aun quedan muchas cosas por definir
+
++ celery x default?
++ mails x default?
++ que repositorio usar(con db en blanco para alimentarla o lo limpiaremos cada vez)?
++ deberian poderse mostrar muchos eventos y solo acceder a uno por codigo o mantener el multieventos?
++ si llego a usar Vue por default debere agregarlo cn yarn o con CDN?
++ el almacenamiento de archivos sera local o ya nos pasaremos a AWS(mucho mas complicado x q son eventos temporales)?
++ si se usaran muchas instancias podremos usar una pagina para controlar N deploys automaticamente en DOcean?
++ las urls en los configfiles de nginx seguiran siendo a mano?
++ que sucedera cn nginx y gunicorn?(en todo caso con la personalizacion)
+lo ire definiendo mientras desarrollo el container
+
+instalacion
+https://docs.docker.com/engine/install/ubuntu/
+
+usar:
+```
+sudo apt-get install apt-transport-https  ca-certificates curl  gnupg-agent software-properties-common
+sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs) stable"
+```
+
+
+docker ps = lista los contenedores
+docker ps -a = lista contenedores a detalles
+docker ps -aq = lista solo los ID de los contenedores (la q significa quiet, tranquilo o silencioso)
+docker inspect id_contenedor = detalles internos del contenedor
+docker inspect nombre_contenedor = lo mismo que el anterior
+docker inspect -f {{}} nombre_contenedor = filtra una variable especifico del contenedor
+docker rm nombre_contenedor = elimina un contenedor
+docker rm $(ps -aq) = borra TODOS los contenedores
