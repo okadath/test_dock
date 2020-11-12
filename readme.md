@@ -407,3 +407,6 @@ docker-compose build
 ya que este  buildeado hay que levantarlo y ieando a la direccion indicada veremos si se levanto o no
 
 docker-compose up -d
+docker-compose down -v
+docker-compose -f docker-compose.prod.yml up -d --build
+
