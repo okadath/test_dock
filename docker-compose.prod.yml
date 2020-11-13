@@ -40,7 +40,7 @@ services:
     restart: always
     build: ./nginx
     ports:
-      - "80:80"
+      - "80:8000"
     # volumes:
     #   - web-static:/www/static
     # links:
