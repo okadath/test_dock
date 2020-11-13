@@ -13,6 +13,6 @@ services:
     restart: always
     build: ./nginx
     ports:
-      - "3002:80"
+      - "8000:80"
     depends_on:
       - web
