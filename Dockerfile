@@ -45,7 +45,7 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . .
 RUN pip install django gunicorn
-EXPOSE 8000
+# EXPOSE 8000
 FROM nginx:1.19.0-alpine
 # FROM nginx
 
