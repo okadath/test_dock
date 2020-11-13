@@ -23,10 +23,10 @@ services:
   web:
     restart: always
     build: ./
-    ports:
-      - "8000:8000"
-    # expose:
-    #   - "8000"
+    # ports:
+    #   - "8000:8000"
+    expose:
+      - "8000"
     # links:
     #   - postgres:postgres
     #   - redis:redis
@@ -43,6 +43,8 @@ services:
     build: ./nginx
     ports:
       - "80:80"
+    depends_on:
+      - web
     # volumes:
     #   - web-static:/www/static
     # links:
