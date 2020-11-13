@@ -42,9 +42,9 @@ services:
     restart: always
     build: ./nginx
     ports:
-      - "80:8000"
-    depends_on:
-      - web
+      - "80:8000" 
+    links:
+        - web  
     # volumes:
     #   - web-static:/www/static
     # links:
