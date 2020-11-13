@@ -10,8 +10,9 @@ services:
     expose:
       - 8000
   nginx:
+    restart: always
     build: ./nginx
     ports:
-      - 80:80
+      - 80:8000
     depends_on:
       - web
