@@ -43,7 +43,9 @@ services:
     build: ./nginx
     ports:
       - "8000:80"
-    network_mode: host
+    depends_on:
+      - web
+    # network_mode: host
     # volumes:
     #   - web-static:/www/static
     # links:
