@@ -13,6 +13,6 @@ services:
     restart: always
     build: ./nginx
     ports:
-      - "localhost:80:123"
+      - "0.0.0.0:80:123"
     depends_on:
       - web
