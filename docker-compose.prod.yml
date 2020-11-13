@@ -4,11 +4,11 @@ services:
   web:
     build: ./
     command: gunicorn OnlineEXP.wsgi:application --bind 0.0.0.0:8000
-    # ports:
-    #   - 8000:8000
+    ports:
+      - 80:8000
     # con esto exponemos el puerto a nginx, sustituyendo lo de arriba
-    expose:
-      - 8000
+    # expose:
+      # - 80
   nginx:
     restart: always
     build: ./nginx
