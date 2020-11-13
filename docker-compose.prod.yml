@@ -26,7 +26,7 @@ services:
     # ports:
     #   - "8000:8000"
     expose:
-      - "80"
+      - "8000"
     # links:
     #   - postgres:postgres
     #   - redis:redis
@@ -36,15 +36,14 @@ services:
     # env_file: .env
     # environment:
     #   DEBUG: 'true'
-    command: gunicorn OnlineEXP.wsgi:application -w 2  --bind 0.0.0.0:80
+    command: gunicorn OnlineEXP.wsgi:application -w 2  --bind 0.0.0.0:8000
 
   nginx:
     restart: always
     build: ./nginx
     ports:
-      - "80:80"
-    links:
-        - web  
+      - "8000:80"
+    network_mode: host
     # volumes:
     #   - web-static:/www/static
     # links:
