@@ -12,7 +12,5 @@ services:
   nginx:
     restart: always
     build: ./nginx
-    ports:
-      - 80:8000
     depends_on:
       - web
