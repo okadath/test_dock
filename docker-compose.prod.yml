@@ -36,7 +36,7 @@ services:
     # env_file: .env
     # environment:
     #   DEBUG: 'true'
-    command: gunicorn OnlineEXP.wsgi:application -w 2  --bind 0.0.0.0:8000
+    command: gunicorn OnlineEXP.wsgi:application -w 3  --bind 0.0.0.0:8000
 
   nginx:
     restart: always
@@ -45,6 +45,7 @@ services:
       - "80:80"
     depends_on:
       - web
+      # necesitamos ver como integrarlo desde nginx, usar el 
     # network_mode: host
     # volumes:
     #   - web-static:/www/static
