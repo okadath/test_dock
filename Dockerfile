@@ -47,6 +47,6 @@ RUN pip install -r requirements.txt
 COPY . .
 RUN pip install django gunicorn
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
-RUN sudo chmod -R 664 /root/test_dock/static/
+RUN chmod -R 664 /root/test_dock/static/
 
 # EXPOSE 8000
