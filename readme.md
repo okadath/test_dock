@@ -336,47 +336,8 @@ https://dnschecker.org/
 
 para checar si ya se propagaron los DNS en internet
 
-## Docker
-
-ante el posible uso multiple de este proyecto iniciare a dockerizar el server de produccion
-aun quedan muchas cosas por definir
-
-+ celery x default?
-+ mails x default?
-+ que repositorio usar(con db en blanco para alimentarla o lo limpiaremos cada vez)?
-+ deberian poderse mostrar muchos eventos y solo acceder a uno por codigo o mantener el multieventos?
-+ si llego a usar Vue por default debere agregarlo cn yarn o con CDN?
-+ el almacenamiento de archivos sera local o ya nos pasaremos a AWS(mucho mas complicado x q son eventos temporales)?
-+ si se usaran muchas instancias podremos usar una pagina para controlar N deploys automaticamente en DOcean?
-+ las urls en los configfiles de nginx seguiran siendo a mano?
-+ que sucedera cn nginx y gunicorn?(en todo caso con la personalizacion)
-lo ire definiendo mientras desarrollo el container
-
-instalacion
-https://docs.docker.com/engine/install/ubuntu/
-
-usar:
-```
-sudo apt-get install apt-transport-https  ca-certificates curl  gnupg-agent software-properties-common
-sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs) stable"
-```
-
 
 ## Docker
-
-ante el posible uso multiple de este proyecto iniciare a dockerizar el server de produccion
-aun quedan muchas cosas por definir
-
-+ celery x default?
-+ mails x default?
-+ que repositorio usar(con db en blanco para alimentarla o lo limpiaremos cada vez)?
-+ deberian poderse mostrar muchos eventos y solo acceder a uno por codigo o mantener el multieventos?
-+ si llego a usar Vue por default debere agregarlo cn yarn o con CDN?
-+ el almacenamiento de archivos sera local o ya nos pasaremos a AWS(mucho mas complicado x q son eventos temporales)?
-+ si se usaran muchas instancias podremos usar una pagina para controlar N deploys automaticamente en DOcean?
-+ las urls en los configfiles de nginx seguiran siendo a mano?
-+ que sucedera cn nginx y gunicorn?(en todo caso con la personalizacion)
-lo ire definiendo mientras desarrollo el container
 
 instalacion
 https://docs.docker.com/engine/install/ubuntu/
@@ -389,10 +350,12 @@ sudo apt-get install apt-transport-https  ca-certificates curl  gnupg-agent soft
 sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs) stable"
 ```
 
-para pushear sin meter siempre la pass
-
+para pushear sin meter siempre la pass(y sin el ssh, hice 128 builds en 2 dias, hubiera sido una locura en local)
+```sh
 git push https://username:password@myrepository.biz/file.git --all
-
+```
+comandos docker
+```sh
 docker ps = lista los contenedores
 
 docker ps -a = lista contenedores a detalles
@@ -408,26 +371,54 @@ docker inspect -f {{}} nombre_contenedor = filtra una variable especifico del co
 docker rm nombre_contenedor = elimina un contenedor
 
 docker rm $(ps -aq) = borra TODOS los contenedores
+```
 
+
+descargar el repo y crear el contenedor
+```sh
+docker-compose up -d build
+```
+si hay un repo previo hay que darlo de baja:
 
 ```sh
-docker-compose build
-```
-ya que este  buildeado hay que levantarlo y ieando a la direccion indicada veremos si se levanto o no
-
-docker-compose up -d
 docker-compose down -v
-```sh
-# creo que basta cn este y darle up para que funcione
-docker-compose -f docker-compose.prod.yml up -d --build
 ```
+
 para entrar al contenedor:
 ```
 docker exec -it test_dock_web_1 "/bin/bash"
 ```
 
-para reiniciar el webserver, como ya esta la bandera always hay que matar el webserver y se reinicia en automatico, asi se actualizara al hacer modificaciones
+para reiniciar el webserver, como ya esta la bandera always en el `docker-compose.yml` hay que matar el webserver y se reinicia en automatico, asi se actualizara al hacer modificaciones(pullear el repo)
 ```
 docker-compose kill -s HUP web
 ```
+## errores docker!
 
+si algo ya consume el puerto 80 este no podra ser usado por el contenedor de nginx, por lo cual ha que matarlo (incluso si es una instalacion de nginx local)
+
+## creacion ambiente
+
+```sh
+cd ../home/
+apt-get update
+apt-get install git
+git clone repo.git
+cd repo
+sudo chmod +x install.sh
+sudo ./install.sh
+docker-compose up -d build
+```
+
+
+### Docker-ToDo:
+ante el posible uso multiple de este proyecto iniciare a dockerizar el server de produccion
+aun quedan muchas cosas por definir
+
++ celery x default?
++ mails x default?
++ que repositorio usar(con db en blanco para alimentarla o lo limpiaremos cada vez)?
++ deberian poderse mostrar muchos eventos y solo acceder a uno por codigo o mantener el multieventos?
++ si llego a usar Vue por default debere agregarlo cn yarn o con CDN?
++ el almacenamiento de archivos sera local o ya nos pasaremos a AWS(mucho mas complicado x q son eventos temporales)?
++ si se usaran muchas instancias podremos usar una pagina para controlar N deploys automaticamente en DOcean?
