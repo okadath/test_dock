@@ -31,6 +31,7 @@ RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt
 FROM python:3.8.3
 
 # set work directory
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
 WORKDIR /root/test_dock/
 
 # set environment variables
@@ -45,4 +46,7 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . .
 RUN pip install django gunicorn
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
+RUN sudo chmod -R 664 /root/test_dock/static/
+
 # EXPOSE 8000
