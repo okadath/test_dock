@@ -29,7 +29,7 @@ services:
       - "80:80"
     expose:
       - "8000"
-     volumes:
+    volumes:
       # cambiar!!!!!
       - static_volume:/root/test_dock/static
     depends_on:
