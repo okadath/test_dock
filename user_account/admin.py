@@ -7,7 +7,7 @@ from django.contrib.auth.admin import UserAdmin as BaseAdmin
 from django.contrib.sessions.models import Session
 
 
-admin.site.register(License)
+# admin.site.register(License)
 admin.site.register(Code)
 admin.site.register(Session)
 admin.site.register(LoggedInUser)
