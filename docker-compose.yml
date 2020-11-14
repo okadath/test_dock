@@ -22,9 +22,7 @@ services:
       - "8000"
     command: gunicorn OnlineEXP.wsgi:application -w 3  --bind 0.0.0.0:8000
     volumes:
-      # - static:/var/www/
-      # - web-django:/usr/src/app
-      # - static_volume:/home/test_dock/
+      #usarlo como reverse proxy!!!
       - ./static:/home/test_dock/static
 
   nginx:
@@ -34,15 +32,8 @@ services:
       - "80:80"
     expose:
       - "8000"
-    # volumes:
-    #   # cambiar!!!!!
-    #   - static_volume:/root/test_dock/static/
     volumes:
-      # - static:/var/www/
-      # - ./static:/home/test_dock/static
+      #usarlo como reverse proxy!!!
       - ./static:/static
     depends_on:
       - web
-
-# volumes:
-#   static_volume:
