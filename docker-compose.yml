@@ -24,6 +24,7 @@ services:
     volumes:
       #usarlo como reverse proxy!!!
       - ./static:/home/test_dock/static
+      - .:/home/test_dock/
 
   nginx:
     restart: always
