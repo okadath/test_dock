@@ -51,11 +51,11 @@ RUN pip install -r requirements.txt
 COPY . $APP_HOME
 
 # chown all the files to the app user
-RUN addgroup -S app && adduser -S app -G app
-RUN chown -R app:app $APP_HOME
+# RUN addgroup -S app && adduser -S app -G app
+# RUN chown -R app:app $APP_HOME
 
-# change to the app user
-USER app
+# # change to the app user
+USER root
 
 RUN pip install django gunicorn
 
