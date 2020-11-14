@@ -22,9 +22,9 @@ services:
       - "8000"
     command: gunicorn OnlineEXP.wsgi:application -w 3  --bind 0.0.0.0:8000
     volumes:
-      - static:/var/www/
+      # - static:/var/www/
       # - web-django:/usr/src/app
-      # - static:/home/test_dock/static
+      - static_volume:/home/test_dock/static
       # - .:/root/test_dock/
 
   nginx:
@@ -38,10 +38,10 @@ services:
     #   # cambiar!!!!!
     #   - static_volume:/root/test_dock/static/
     volumes:
-      - static:/var/www/
-      # - static:/home/test_dock/static
+      # - static:/var/www/
+      - static_volume:/home/test_dock/static
     depends_on:
       - web
 
 volumes:
-  static:
+  static_volume:

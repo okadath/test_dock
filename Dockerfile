@@ -32,7 +32,7 @@ FROM python:3.8.3
 
 # set work directory
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
-ENV APP_HOME=/root/test_dock/
+ENV APP_HOME=/root/test_dock
 RUN mkdir $APP_HOME
 RUN mkdir $APP_HOME/static
 WORKDIR  $APP_HOME
