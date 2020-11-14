@@ -48,5 +48,5 @@ COPY . .
 RUN pip install django gunicorn
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
 # RUN chmod -R 664 /root/test_dock/static/
-RUN chmod -R 664 ./static
+# RUN chmod -R 664 ./static
 # EXPOSE 8000
