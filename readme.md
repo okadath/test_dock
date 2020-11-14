@@ -394,13 +394,21 @@ para pushear sin meter siempre la pass
 git push https://username:password@myrepository.biz/file.git --all
 
 docker ps = lista los contenedores
+
 docker ps -a = lista contenedores a detalles
+
 docker ps -aq = lista solo los ID de los contenedores (la q significa quiet, tranquilo o silencioso)
+
 docker inspect id_contenedor = detalles internos del contenedor
+
 docker inspect nombre_contenedor = lo mismo que el anterior
+
 docker inspect -f {{}} nombre_contenedor = filtra una variable especifico del contenedor
+
 docker rm nombre_contenedor = elimina un contenedor
+
 docker rm $(ps -aq) = borra TODOS los contenedores
+
 
 ```sh
 docker-compose build
