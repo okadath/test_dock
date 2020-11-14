@@ -425,3 +425,8 @@ para entrar al contenedor:
 ```
 docker exec -it test_dock_web_1 "/bin/bash"
 ```
+
+para reiniciar el webserver, como ya esta la bandera always hay que matar el webserver y se reinicia en automatico, asi se actualizara al hacer modificaciones
+```
+docker-compose kill -s HUP web
+```
