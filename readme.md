@@ -430,3 +430,4 @@ para reiniciar el webserver, como ya esta la bandera always hay que matar el web
 ```
 docker-compose kill -s HUP web
 ```
+
