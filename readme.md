@@ -1,4 +1,36 @@
-# Poblar la DB a partir de los archivos csv:
+
+## actualizar el server
+
+entrar al container:
+```sh
+docker exec -it test_dock_web_1 "/bin/bash"
+```
+
+pullear/pushear:
+```sh
+#pushear cambios de la db a github
+git add -A
+git commit -m "magical commit"
+git push origin main
+
+#pullear desde github
+git pull origin main
+#si quieres eliminar los cambios en el repo(NO CON LA DB, solo en desarrollo)
+git reset --hard HEAD~1
+```
+
+salir del repo (vuelves a la carpeta del proyecto):
+```sh
+exit
+```
+
+recargar el proceso del server()
+```sh
+docker-compose kill -s HUP web
+```
+
+
+## Poblar la DB a partir de los archivos csv:
 
 El script `feed.py` (solo necesita a Django como dependencia) convierte los datos de ese csv en datos listos para ser guardados en la DB usando el modulo Import-Export
 
