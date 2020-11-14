@@ -55,7 +55,7 @@ COPY . $APP_HOME
 # RUN chown -R app:app $APP_HOME
 
 # # change to the app user
-USER root
+# USER root
 
 RUN pip install django gunicorn
 
