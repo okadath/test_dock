@@ -32,7 +32,10 @@ FROM python:3.8.3
 
 # set work directory
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
-WORKDIR /root/test_dock/
+ENV APP_HOME=/root/test_dock/
+RUN mkdir $APP_HOME
+RUN mkdir $APP_HOME/static
+WORKDIR WORKDIR $APP_HOME
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -44,8 +47,19 @@ COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
 # copy project
-COPY . .
+# copy project
+COPY . $APP_HOME
+
+# chown all the files to the app user
+RUN chown -R app:app $APP_HOME
+
+# change to the app user
+USER app
+
 RUN pip install django gunicorn
+
+
+
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE!
 # RUN chmod -R 664 /root/test_dock/static/
 # RUN chmod -R 664 ./static
