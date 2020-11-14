@@ -407,7 +407,7 @@ git clone repo.git
 cd repo
 sudo chmod +x install.sh
 sudo ./install.sh
-docker-compose up -d build
+docker-compose up -d --build
 ```
 
 
