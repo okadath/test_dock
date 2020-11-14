@@ -23,8 +23,8 @@ services:
     command: gunicorn OnlineEXP.wsgi:application -w 3  --bind 0.0.0.0:8000
     volumes:
       #usarlo como reverse proxy!!!
-      - ./static:/home/test_dock/static
-      - .:/home/test_dock/
+      - static:/home/test_dock/static
+      - repo:/home/test_dock/
 
   nginx:
     restart: always
@@ -35,6 +35,9 @@ services:
       - "8000"
     volumes:
       #usarlo como reverse proxy!!!
-      - ./static:/static
+      - ./static:static
     depends_on:
       - web
+volumes:
+  static:
+  repo:

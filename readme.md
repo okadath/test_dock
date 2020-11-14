@@ -376,7 +376,7 @@ docker rm $(ps -aq) = borra TODOS los contenedores
 
 descargar el repo y crear el contenedor
 ```sh
-docker-compose up -d build
+docker-compose up -d --build
 ```
 si hay un repo previo hay que darlo de baja:
 
