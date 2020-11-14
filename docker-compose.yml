@@ -24,6 +24,7 @@ services:
     volumes:
       # - web-django:/usr/src/app
       - web-static:/root/test_dock/static
+      - .:/code
 
   nginx:
     restart: always
