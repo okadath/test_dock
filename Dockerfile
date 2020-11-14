@@ -35,7 +35,7 @@ FROM python:3.8.3
 ENV APP_HOME=/root/test_dock/
 RUN mkdir $APP_HOME
 RUN mkdir $APP_HOME/static
-WORKDIR WORKDIR $APP_HOME
+WORKDIR  $APP_HOME
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
