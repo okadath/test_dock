@@ -24,7 +24,7 @@ services:
     volumes:
       # - static:/var/www
       # - web-django:/usr/src/app
-      - static:/home/test_dock/static/
+      - static:/home/test_dock/static
       # - .:/root/test_dock/
 
   nginx:
@@ -39,7 +39,7 @@ services:
     #   - static_volume:/root/test_dock/static/
     volumes:
       # - static:/var/www/
-      - static:/home/test_dock/static/
+      - static:/home/test_dock/static
     depends_on:
       - web
 
